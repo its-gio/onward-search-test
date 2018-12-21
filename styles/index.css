@@ -1,6 +1,10 @@
 @import "./components/Header.css";
 @import "./components/Content.css";
 
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
   background: #e5e6e6;
