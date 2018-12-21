@@ -52,7 +52,7 @@
 }
 
 /* Right Side */
-.city-section {
+.location-section {
   padding: 0 10px;
   max-width: 25vw;
   width: 100%;
@@ -60,8 +60,16 @@
   background: #999;
 }
 
-.city-section__title {
+.location-section__title {
   margin: 10px 0;
+}
+
+.cities-dd {
+  display: none;
+}
+
+.cities-dd.active {
+  display: initial;
 }
 
 @media only screen and (max-width: 550px) {
