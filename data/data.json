@@ -1,5 +1,14 @@
 {
-  "United-States": ["Los Angeles", "San Diego", "San Francisco"],
-  "Mexico": ["Chihuahua", "Jalisco", "Mexico City"],
-  "China": ["Beijing", "Hong Kong", "Shanghai"]
+  "United-States": {
+    "cities": ["Los Angeles", "San Diego", "San Francisco"],
+    "population": "327.16 million"
+  },
+  "Mexico": {
+    "cities": ["Chihuahua", "Jalisco", "Mexico City"],
+    "population": "21.2 million"
+  },
+  "China": {
+    "cities": ["Beijing", "Hong Kong", "Shanghai"],
+    "population": "1.411 billion"
+  }
 }
