@@ -1,0 +1,21 @@
+nav {
+  background: #444;
+  display: flex;
+  align-items: stretch;
+}
+
+nav a {
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+nav a.active {
+  background: #000;
+}
+
+nav a:hover {
+  background: #333;
+}

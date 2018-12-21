@@ -1,0 +1,14 @@
+@import "./components/Header.css";
+@import "./components/Content.css";
+
+body,
+html {
+  background: #e5e6e6;
+  font-family: sans-serif;
+  margin-top: 10px;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0;
+}

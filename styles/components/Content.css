@@ -1,0 +1,63 @@
+.title {
+  color: #444;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Left Side */
+.content-section {
+  width: 70vw;
+  padding-right: 15px;
+}
+
+.tabs {
+  margin-top: 20px;
+}
+
+.tablinks {
+  border: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #777;
+  background: #bbb;
+  padding: 5px 15px;
+}
+
+.tablinks.active {
+  background: #555;
+}
+
+.tab-info {
+  border: 1px solid #bbb;
+  padding: 10px;
+  opacity: 0;
+  display: none;
+}
+
+.tab-info.active {
+  opacity: 1;
+  display: block;
+}
+
+.tab-info p {
+  padding-bottom: 10px;
+}
+
+.tab-info p:last-child {
+  padding-bottom: 0;
+}
+
+/* Right Side */
+.city-section {
+  padding: 0 10px;
+  width: 25vw;
+  height: 75vh;
+  background: #999;
+}
+
+.city-section__title {
+  margin: 10px 0;
+}
