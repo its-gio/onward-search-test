@@ -15,7 +15,8 @@ function locationPick(localData) {
 
   countries.forEach(country => {
     let option = document.createElement("option");
-    option.text = `${country}`;
+    option.text = `${country.replace("-", " ")}`;
+    option.value = `${country}`;
     countryDrop.appendChild(option);
   });
 }
