@@ -19,8 +19,8 @@
 }
 
 .tablinks {
+  font-size: 2.5vw;
   border: 0;
-  font-size: 1.5em;
   font-weight: bold;
   color: #777;
   background: #bbb;
