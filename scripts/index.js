@@ -24,7 +24,13 @@ function showCountries(localData) {
 
 function showCities(e) {
   let country = e.target.value;
+
+  country
+    ? citiesArea.classList.add("active")
+    : citiesArea.classList.remove("active");
+
   if (!country) return;
+
   let cities = localData[`${country}`].cities;
 
   cities.forEach(city => {
@@ -33,8 +39,6 @@ function showCities(e) {
     option.value = `${city}`;
     citiesDrop.appendChild(option);
   });
-
-  citiesArea.classList.add("active");
 }
 
 // Tabs functionality
