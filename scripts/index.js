@@ -31,7 +31,6 @@ function showCities(e) {
 
   if (!country) return;
 
-  // citiesDrop.forEach(drop => (drop.options = null));
   citiesDrop.options.length = 0;
 
   let cities = localData[`${country}`].cities;
@@ -46,8 +45,8 @@ function showCities(e) {
 
 // Tabs functionality
 function openTab(e, tabName) {
-  const tabInfo = document.getElementsByClassName("tab-info");
-  const tablinks = document.getElementsByClassName("tablinks");
+  const tabInfo = document.querySelectorAll(".tab-info");
+  const tablinks = document.querySelectorAll(".tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tabInfo[i].className = tabInfo[i].className.replace(" active", "");
     tablinks[i].className = tablinks[i].className.replace(" active", "");
