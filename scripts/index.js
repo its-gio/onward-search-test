@@ -1,6 +1,7 @@
 // Fill in form
 const countryDrop = document.getElementById("country");
 const citiesDrop = document.getElementById("cities");
+const citiesArea = document.querySelector(".cities-dd");
 let localData;
 
 (async function getData() {
@@ -23,8 +24,17 @@ function showCountries(localData) {
 
 function showCities(e) {
   let country = e.target.value;
+  if (!country) return;
+  let cities = localData[`${country}`].cities;
 
-  console.log(localData[`${country}`].cities);
+  cities.forEach(city => {
+    let option = document.createElement("option");
+    option.text = `${city.replace("-", " ")}`;
+    option.value = `${city}`;
+    citiesDrop.appendChild(option);
+  });
+
+  citiesArea.classList.add("active");
 }
 
 // Tabs functionality
