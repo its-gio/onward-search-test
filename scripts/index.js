@@ -31,6 +31,9 @@ function showCities(e) {
 
   if (!country) return;
 
+  // citiesDrop.forEach(drop => (drop.options = null));
+  citiesDrop.options.length = 0;
+
   let cities = localData[`${country}`].cities;
 
   cities.forEach(city => {
