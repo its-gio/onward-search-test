@@ -7,10 +7,10 @@ let localData;
   await fetch("../data/data.json")
     .then(blob => blob.json())
     .then(data => (localData = data));
-  locationPick(localData);
+  showCountries(localData);
 })();
 
-function locationPick(localData) {
+function showCountries(localData) {
   const countries = Object.keys(localData);
 
   countries.forEach(country => {
@@ -19,6 +19,12 @@ function locationPick(localData) {
     option.value = `${country}`;
     countryDrop.appendChild(option);
   });
+}
+
+function showCities(e) {
+  let country = e.target.value;
+
+  console.log(localData[`${country}`].cities);
 }
 
 // Tabs functionality
@@ -32,3 +38,5 @@ function openTab(e, tabName) {
   }
   e.currentTarget.className += " active";
 }
+
+countryDrop.addEventListener("change", showCities);
